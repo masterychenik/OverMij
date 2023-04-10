@@ -1,0 +1,114 @@
+/* Stijl voor de gehele pagina */
+body{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-left:200px;
+  margin-right: 200px;
+  color: rgb(128, 21, 243);
+  font-size: 19px;
+  font-family: Verdana, sans-serif;
+  background-color: skyblue;
+  }
+  header,body,footer {
+       padding: 5px;
+  }
+  .container {
+    display: flex;
+    align-items: center; /* Verticaal centreren van de inhoud */
+  }
+  
+  h1 {
+    flex-shrink: 0; /* Voorkomen dat de h1 krimpt */
+    margin-right: 20px; /* de gewenste ruimte  tussen h1 en p */
+  }
+  
+  p {
+    flex-grow: 1; /* Laten de p het beschikbare ruimte opvullen */
+  }
+
+  table {
+    flex-grow: 1;
+  }
+  
+    
+/* Stijl voor de elementen in de body */
+ul a{
+  color: white;
+  text-decoration: none;
+  }
+ /* Knoppen*/ 
+  li{
+  display: inline-block;
+  height: 22px;
+  width: 100px;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  border-left: 2px solid green;
+  border-right: 1px solid green;
+  background-color: olive;
+  }
+  /* Stijl voor hover-effect */
+  li:hover{
+  background-color: lightgreen;
+  border-style: none;
+  }
+
+  /* Stijl voor uitgeschakelde knop */
+  
+.uitgeschakelde-link {
+  /* Voeg stijl toe om uitgeschakelde links te tonen */
+  opacity: 0.5; /* Of een andere stijl naar keuze */
+  cursor: not-allowed; /* Of een andere cursor-stijl naar keuze */
+  pointer-events: none; /* Schakel interactie uit */
+}
+
+  /*Stijl voor tabel*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/*Stijl verstuur button*/
+#verstuurBtn {
+  background-color: blue; /* startkleur van de knop */
+  color: white; /* tekstkleur van de knop */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#verstuurBtn:focus {
+  outline: none; /* verwijder standaard focusstijl */
+}
+
+#verstuurBtn:active {
+  background-color: green; /* kleur van de knop na het klikken */
+}
+
+
+/* Stijl voor de footer */
+.footer {
+  background-color: #808080; /* achtergrondkleur van de footer */
+}
+
